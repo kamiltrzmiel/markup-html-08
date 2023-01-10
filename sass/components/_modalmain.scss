@@ -1,0 +1,192 @@
+.is-hidden {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+ }
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    padding-top: 221px;
+}
+
+.modal {
+        width: 528px;
+        height: 581px;
+        background-color: $pageColorWhite;
+        position: absolute;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 2s;
+        transition-timing-function: linear;
+
+    .backdrop.is-hidden & {
+        transform: scale(0.1);
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    &__form-box {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 12px 40px 0px 40px;
+    }
+  
+    &__form-label {
+        display: block;
+        position: relative;
+        margin-bottom: 10px;
+        color: $pageColorGrey;
+        font-size: 12px;
+    }
+  
+    &__form-label:focus-within,
+    &__form-label:hover .modal-form-icon {
+        fill: $pageColorBlue;
+    }
+  
+    &__form-input {
+        display: block;
+        width: 100%;
+        height: 40px;
+        margin-top: 4px;
+        padding-left: 35px;
+        font-size: 12px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition-property: border;
+        transition-duration: $transTime;
+        transition-timing-function: $transFunc;
+    }
+
+    &__form-input:hover,
+    &__form-input:active,
+    &__form-input:focus {
+        border: 1px solid $pageColorBlue;
+        outline: none;
+    }
+
+    &__form-textarea {
+        height: 120px;
+        padding: 12px 16px;
+        color: rgba(117, 117, 117, 1);
+        resize: none;
+    }
+  
+    &__custom-checkbox {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    &__custom-checkbox input[type='checkbox'] {
+        background: $pageColorWhite;
+        margin: 0;
+        appearance: none;
+        border: 2px solid $pageColorBlack;
+        width: 19px;
+        height: 20px;
+        border-radius: 4px;
+        margin-right: 8px;
+    }
+
+    &__custom-icon-check {
+        cursor: pointer;
+     }
+
+    &__custom-checkbox &__custom-icon-check {
+        position: absolute;
+        top: 50%;
+        left: 2px;
+        transform: translateY(-50%);
+        opacity: 0;
+        width: 15px;
+        height: 16px;
+        transition-property: opacity;
+        transition-duration: $transTime;
+        transition-timing-function: $transFunc;
+    }
+
+    &__custom-checkbox input[type='checkbox']:checked + &__custom-icon-check {
+        opacity: 1;
+        background-color: $pageColorBlue;
+        transition-property: opacity;
+        transition-duration: $transTime;
+        transition-timing-function: $transFunc;
+    }
+
+    &__custom-checkbox-links {
+        color: $pageColorBlue;
+    }
+  
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__btn-send {
+        margin-top: 30px;
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        color: $pageColorWhite;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        background-color: $pageColorBlue;
+        border: none;
+        border-radius: 4px;
+    }
+
+    &__form-input &__form-textarea > ::placeholder {
+        font-weight: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: $pageColorBlack;
+    }
+
+    &__form-icon {
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 15px;
+        /* fill: $pageColorBlack; */
+        background-color: rgba(255, 255, 255, 0.1);
+        transition-property: fill;
+        transition-duration: $transTime;
+        transition-timing-function: $transFunc;
+    }
+   
+    &__close-btn {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 8px;
+        right: 8px;
+        background-color: $pageColorWhite;
+        border: solid 1px rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}

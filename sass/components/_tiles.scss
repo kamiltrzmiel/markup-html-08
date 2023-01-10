@@ -1,0 +1,88 @@
+.tiles {
+    background-color: $pageColorWhite;
+  
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+        column-gap: 24px;
+        padding-bottom: 94px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    &__item {
+        list-style: none;
+        border-bottom: 1px solid $pageColorBorbox;
+        border-left: 1px solid $pageColorBorbox;
+        border-right: 1px solid $pageColorBorbox;
+        transition-property: box-shadow;
+        transition-duration: $transTime;
+        transition-timing-function: $transFunc;
+        border-radius: 5px;
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.15),
+        0px 3px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    &__item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    &__item:hover &__picbox {
+        transform: translateY(0);
+    }
+  
+    &__pic {
+        position: relative;
+        width: 370px;
+        height: 294px;
+        overflow: hidden;
+    }
+
+    &__picbox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background-color: rgba(33, 150, 243, 0.9);
+        transform: translateY(100%);
+        transition-property: transform;
+        transition-duration: $transTime;
+        transition-timing-function: linear;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+  
+    &__picdescription {
+        font-size: 18px;
+        line-height: 1.55em;
+        color: $pageColorWhite;
+        margin: 0px 45px 0px 24px;
+    }
+
+    &__projectname {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 36px;
+        background-color: $pageColorWhite;
+        margin-left: 24px;
+        padding-top: 20px;
+    }
+    &__projecttitle {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+    &__projecttype {
+        font-size: 16px;
+        line-height: 30px;
+        color: $pageColorGrey;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+}

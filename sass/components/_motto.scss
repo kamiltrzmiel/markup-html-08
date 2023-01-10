@@ -1,0 +1,50 @@
+.motto {
+    padding: 200px 0px 280px 0px;
+    background-color: $pageColorBack;
+    background-image: linear-gradient(rgba(47, 47, 57, 0.4), rgba(47, 47, 57, 0.4)),
+      url(../images/img_motto.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    &__frame {
+        text-align: center;
+        width: 696px;
+        height: 120px;
+    }
+
+    &__text {
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 136%;
+        letter-spacing: 0.06;
+        color: $pageColorWhite;
+        margin-bottom: 50px;
+    }
+
+    &__btn {
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        width: 200px;
+        height: 50px;
+        border: none;
+        cursor: pointer;
+        color: $pageColorWhite;
+        border-radius: 4px;
+        background-color: $pageColorBlue;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        transition-property: color, background-color;
+        transition-duration: $transTime;
+        transition-timing-function: $transFunc;
+    }
+
+    &__btn:hover {
+    color: $pageColorBlue;
+    background-color: $pageColorWhite;
+    }
+    &__btn:focus,
+    &__btn:active {
+    color: $pageColorWhite;
+    }
+}

@@ -1,0 +1,16 @@
+.logo {
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    margin-right: 93px;
+    color: $pageColorBlue;
+    text-decoration: none;
+    
+    &--header {
+    color: $pageColorBlack;
+    }
+
+    &--footer {
+    color: $pageColorWhite;
+    }
+}    

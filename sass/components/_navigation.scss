@@ -1,0 +1,92 @@
+/*-----------HEADER NAVIGATION---------------*/
+.header {
+    border-bottom: solid 1px #ececec;
+  
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+
+    &__navi {
+        display: flex;
+    }
+
+    &__selectors {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+  
+    &__selkeys {
+        margin-right: 46px;
+        display: inline;
+    }
+  
+    &__selkeyslink {
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        color: $pageColorBlack;
+        transition-property: color;
+        transition-duration: $transTime;
+        transition-timing-function: $transFunc;
+    }
+
+    &__selkeyslink:hover,
+    &__selkeyslink:focus,
+    &__selkeyslink:active {
+      color: $pageColorBlue;
+    }
+  
+    &__backlight {
+        position: relative;
+    }
+  
+    &__backlight::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: $pageColorBlue;
+        border-radius: 4px;
+        margin-top: 27px;
+    }
+
+    &__contact {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+    &__contactlist {
+        margin-right: 48px;
+        display: inline;
+      }
+      
+    &__contactlist:last-child {
+        margin-right: 0;
+      }
+      
+    &__contactitem {
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        color: $pageColorGrey;
+        fill: $pageColorGrey;
+        transition-property: color;
+        transition-duration: $transTime;
+        transition-timing-function: $transFunc;
+      }
+      
+    &__contactitem:hover,
+    &__contactitem:focus,
+    &__contactitem:active {
+        color: $pageColorBlue;
+      }
+}
+

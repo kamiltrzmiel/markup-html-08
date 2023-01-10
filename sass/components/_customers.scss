@@ -1,0 +1,43 @@
+.customer {
+        text-align: center;
+  
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+    }
+  
+    &__list {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__list-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        border: 1px solid $pageColorLgrey;
+        width: 170px;
+        height: 92px;
+        &:hover {
+            border: 1px solid $pageColorBlue;
+        }
+    }
+
+    &__icon {
+        fill: $pageColorLgrey;
+        transition-duration: $transTime;
+        transition-timing-function: $transFunc;
+    }
+
+    &__list-item:hover &__icon {
+        fill: $pageColorBlue;
+    }
+}
