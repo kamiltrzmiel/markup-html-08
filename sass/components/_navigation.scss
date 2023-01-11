@@ -13,6 +13,7 @@
 
     &__navi {
         display: flex;
+        align-items: center;
     }
 
     &__selectors {
@@ -23,7 +24,8 @@
   
     &__selkeys {
         margin-right: 46px;
-        display: inline;
+        // display: inline;
+        list-style: none;
     }
   
     &__selkeyslink {

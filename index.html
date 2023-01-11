@@ -61,6 +61,11 @@
             >
           </li>
         </ul>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="mobile-menu__icon" width="40" height="40">
+            <use href="images/icons.svg#icon-mobile-open"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!---------------- HEADER CONTACT END -------------------->
@@ -68,7 +73,7 @@
       <!--------------MOTTO BEGIN----------------------------->
       <section class="motto section">
         <div class="motto__frame">
-          <h1 class="motto__text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+          <h1 class="motto__text">EFEKTYWNE ROZWIĄZANIA<br />DLA TWOJEGO BIZNESU</h1>
           <button type="button" class="motto__btn" data-modal-open>Zamów usługę</button>
         </div>
       </section>
@@ -454,6 +459,14 @@
         </div>
       </div>
     </footer>
+    <!---------------------MOBILE MENU BEGIN  -------------------------->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="mobile-menu__icon mobile-menu__icon--close" width="40" height="40">
+          <use href="images/icons.svg#icon-mobile-close"></use>
+        </svg>
+      </button>
+    </div>
     <!-------------------- MODAL WINDOW BEGIN  ------------------------->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">

@@ -6,11 +6,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: 50%;
+    background-size: cover;
   
     &__frame {
         text-align: center;
-        width: 696px;
-        height: 120px;
+        // width: 696px;
+        // height: 120px;
     }
 
     &__text {

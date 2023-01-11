@@ -26,3 +26,16 @@ body {
     padding-bottom: 94px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+}
+
+@media screen and (min-width: $breakpointDesktopBegin) {
+  .section {
+    padding-bottom: 94px;
+  }
+}
+
