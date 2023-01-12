@@ -2,10 +2,16 @@
     background-color: $pageColorBack;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    &__address {
+        text-align: center;
+        margin-bottom: 60px;
+    }
   
     &__content {
         display: flex;
-        flex-direction: row;
+        // flex-direction: row;
+        flex-direction: column;
         align-items: center;
     }
 
@@ -22,6 +28,7 @@
         font-size: 14px;
         line-height: 171%;
         letter-spacing: 0.03em;
+        text-align: center;
     }
 
     &__address-item--textcolor {
@@ -43,7 +50,9 @@
     }
   
     &__socials {
-        margin-left: 70px;
+        //margin-left: 70px;
+        text-align: center;
+        margin-bottom: 60px;
     }
 
     &__description {
@@ -64,6 +73,7 @@
 
     &__socials-list-item {
         list-style: none;
+        text-align: center;
     }
 
     &__socials-list-link {
@@ -86,19 +96,21 @@
     }
   
     &__newsletter {
-        margin-left: 78px;
+        //margin-left: 78px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
     }
 
     &__newsletter-form {
-        display: flex;
+        //display: flex;
         justify-content: center;
         align-items: center;
         gap: 12px;
     }
   
     &__newsletter-email {
-        width: 358px;
-        height: 50px;
+        width: min(94vw,28rem);
         background-color: $pageColorBack;
         color: $pageColorWhite;
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -138,5 +150,37 @@
         align-items: center;
         gap: 24px;
         cursor: pointer;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: $breakpointTablet) {
+    .footer__content {
+        justify-content: space-around;
+    }
+    
+
+}
+
+@media screen and (min-width: $breakpointDesktop) {
+    .footer__address {
+        text-align: left;
+        margin-bottom: 0px;
+    }
+    .footer__content {
+        flex-direction: row;
+    }
+    .footer__newsletter {
+        margin-left: 78px;
+    }
+    .footer__newsletter-form {
+        display: flex;
+    }
+    .footer__newsletter-btn {
+        margin-top: 0px;
+    }
+    .footer__socials {
+        margin-top: 60px;
+        margin-left: 70px;
     }
 }

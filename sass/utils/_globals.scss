@@ -16,9 +16,12 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 15px;
+    // max-width: 1200px;
+    // margin: auto;
+    // padding: 0 15px;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .section {
@@ -33,9 +36,9 @@ img {
 
 }
 
-@media screen and (min-width: $breakpointDesktopBegin) {
-  .section {
-    padding-bottom: 94px;
-  }
-}
+// @media screen and (min-width: $breakpointDesktopBegin) {
+//   .section {
+//     padding-bottom: 94px;
+//   }
+// }
 

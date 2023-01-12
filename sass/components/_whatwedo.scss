@@ -43,3 +43,9 @@
         top: -74px;
     }
 }
+
+@media screen and (max-width: $breakpointDesktop) {
+    .whatwedo{
+        display: none;
+    }
+}
