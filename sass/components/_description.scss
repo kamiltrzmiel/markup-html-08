@@ -7,17 +7,9 @@
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-    }
-
-    &__item {
-        display: inline-block;
-        width: 270px;
-        margin: 0px 20px 0px 0px;
-        padding-left: 0;
-        padding-right: 0;
-    //     &:last-child {
-    //         margin-right: 0px;
-    //     }
+        row-gap: 1.875rem;
+        column-gap: 1.875rem;
+        list-style: none;
     }
 
     &__icon {
@@ -34,6 +26,7 @@
         font-size: 16px;
         text-transform: uppercase;
         margin-bottom: 10px;
+        text-align: center;
     }
 
     &__text {
@@ -41,5 +34,25 @@
         line-height: 171%;
         letter-spacing: 0.03em;
         color: $pageColorGrey;
+
+    }
+}
+
+@media screen and (min-width: $breakpointTablet) {
+    .description__list {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .description__item {
+        max-width: 22rem;
+    }
+    .description__title {
+        text-align: left;
+    }
+}
+@media screen and (min-width: $breakpointDesktop) {
+    .description__list {
+        flex-wrap: nowrap;
     }
 }
