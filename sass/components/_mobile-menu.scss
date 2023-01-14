@@ -1,18 +1,13 @@
 // settings jump to index.html - js script --MODAL MENU BEGIN--
-.menu-toggle {
+.m {
+    background: none;
     outline: none;
     background: none;
     border: none;
 }
 
-.mobile-menu {
-    // 
-}
-// 
-&.is-open {
-
-}
-// 
-&.menu-toggle {
-
-}
+// @media screen and (max-width: $breakpointMobile) {
+//     &.menu-toggle {
+//         display: none;
+//     }
+// }

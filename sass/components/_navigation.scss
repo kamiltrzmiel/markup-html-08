@@ -18,10 +18,7 @@
     }
 
     &__selectors {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        display: none;
+      display: none;
     }
   
     &__selkeys {
@@ -62,10 +59,7 @@
     }
 
     &__contact {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        display: none;
+      display: none;
       }
       
     &__contactlist {
@@ -95,8 +89,14 @@
       }
 }
 @media screen and (min-width: 768px) {
-    .header__selectors,
+    .header__selectors {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
     .header__contact {
-      display: none;
-      }
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 }
