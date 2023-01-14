@@ -14,3 +14,15 @@
     color: $pageColorWhite;
     }
 }  
+
+@media screen and (min-width: $breakpointTablet) {
+    .logo {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: $breakpointDesktop) {
+    .logo {
+        // display: flex;        
+    }
+}

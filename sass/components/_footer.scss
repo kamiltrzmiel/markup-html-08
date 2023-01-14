@@ -1,3 +1,10 @@
+.footer-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 .footer {
     background-color: $pageColorBack;
     padding-top: 60px;
@@ -8,12 +15,12 @@
         margin-bottom: 60px;
     }
   
-    &__content {
-        display: flex;
-        // flex-direction: row;
-        flex-direction: column;
-        align-items: center;
-    }
+    // &__content {
+    //     display: flex;
+    //     // flex-direction: row;
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
 
   
     &__address-list {
@@ -67,7 +74,7 @@
   
     &__socials-list {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         gap: 10px;
     }
 
@@ -96,14 +103,13 @@
     }
   
     &__newsletter {
-        //margin-left: 78px;
         display: flex;
         text-align: center;
         flex-direction: column;
     }
 
     &__newsletter-form {
-        //display: flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         gap: 12px;
@@ -155,33 +161,43 @@
 }
 
 @media screen and (min-width: $breakpointTablet) {
-    .footer__content {
-        justify-content: space-around;
-        flex-basis: calc(100% / 3) ;
+    .footer-flex {
+        flex-basis: 40% ;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
-    
+    // .footer__address {
+    //     text-align: right;
+    //     margin-bottom: 50px;
+    // }
+    // .footer__address-item {
+    //     text-align: center;
+    // }
 
 }
 
 @media screen and (min-width: $breakpointDesktop) {
-    .footer__address {
-        text-align: left;
-        margin-bottom: 0px;
-    }
-    .footer__content {
-        flex-direction: row;
-    }
-    .footer__newsletter {
-        margin-left: 78px;
-    }
-    .footer__newsletter-form {
-        display: flex;
-    }
-    .footer__newsletter-btn {
-        margin-top: 0px;
-    }
-    .footer__socials {
-        margin-top: 60px;
-        margin-left: 70px;
-    }
+//     .footer__address {
+//         text-align: left;
+//         margin-bottom: 0px;
+//     }
+//     .footer__content {
+//         flex-direction: row;
+//     }
+//     .footer__newsletter {
+//         margin-left: 78px;
+//     }
+//     .footer__newsletter-form {
+//         display: flex;
+//     }
+//     .footer__newsletter-btn {
+//         margin-top: 0px;
+//     }
+//     .footer__socials {
+//         margin-top: 60px;
+//         margin-left: 70px;
+//     }
+//     .footer__description {
+//         text-align: left;
+//     }
 }

@@ -14,7 +14,7 @@
     &__navi {
         display: flex;
         align-items: center;
-        
+        justify-content: space-between;
     }
 
     &__selectors {
@@ -63,8 +63,7 @@
       }
       
     &__contactlist {
-        margin-right: 48px;
-        display: inline;
+      display: none;
       }
       
     &__contactlist:last-child {
@@ -88,15 +87,36 @@
         color: $pageColorBlue;
       }
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: $breakpointTablet) {
     .header__selectors {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
+        flex-wrap: nowrap;
         align-items: center;
+        padding-left: 83px;
+      
     }
     .header__contact {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       flex-wrap: wrap;
+      gap: 0.625rem;
     }
+    .header__contactlist {
+      display: flex;
+      gap: 0.625rem;
+    }
+    .header__container {
+      margin-left: 15px;
+    }
+  }
+@media screen and (min-width: $breakpointDesktop) {
+    .header__contact {
+      // margin-right: 215px;      
+    }
+    .header__container {
+      // margin-left: 215px;
+    }  
 }

@@ -1,13 +1,36 @@
-// settings jump to index.html - js script --MODAL MENU BEGIN--
-.m {
-    background: none;
-    outline: none;
-    background: none;
-    border: none;
+.mobile-menu {
+    
+    position: fixed;
+    display: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    background-color: $pageColorWhite;
+    transform: translateX(100%);
+
+    &.is-open {
+       transform: translateX(0);
+       opacity: 1;
+       display: block;
+    }
 }
 
-// @media screen and (max-width: $breakpointMobile) {
-//     &.menu-toggle {
-//         display: none;
-//     }
-// }
+
+.mobile-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-button {
+
+}
+
+@media screen and (min-width: $breakpointTablet) {
+    .mobile-toggle {
+        display: none;
+    }
+}
