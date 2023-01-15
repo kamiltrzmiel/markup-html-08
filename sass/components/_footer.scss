@@ -14,15 +14,7 @@
         text-align: center;
         margin-bottom: 60px;
     }
-  
-    // &__content {
-    //     display: flex;
-    //     // flex-direction: row;
-    //     flex-direction: column;
-    //     align-items: center;
-    // }
-
-  
+ 
     &__address-list {
         padding-top: 20px;
         padding-left: 0px;
@@ -110,8 +102,8 @@
 
     &__newsletter-form {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
         gap: 12px;
     }
   
@@ -142,6 +134,7 @@
     &__newsletter-btn {
         width: 200px;
         height: 50px;
+        // padding: 0.625rem 1.75rem 0.625rem 2.5rem;
         background-color: $pageColorBlue;
         color: $pageColorWhite;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -154,50 +147,45 @@
         padding: 10px 0px;
         justify-content: center;
         align-items: center;
-        gap: 24px;
+        // gap: 24px;
         cursor: pointer;
-        margin-top: 20px;
+        //margin-top: 20px;
     }
 }
 
 @media screen and (min-width: $breakpointTablet) {
     .footer-flex {
-        flex-basis: 40% ;
+        flex-basis: 50% ;
         flex-wrap: wrap;
         flex-direction: row;
     }
-    // .footer__address {
-    //     text-align: right;
-    //     margin-bottom: 50px;
-    // }
-    // .footer__address-item {
-    //     text-align: center;
-    // }
-
+    .footer__newsletter-form {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: $breakpointDesktop) {
-//     .footer__address {
-//         text-align: left;
-//         margin-bottom: 0px;
-//     }
-//     .footer__content {
-//         flex-direction: row;
-//     }
-//     .footer__newsletter {
-//         margin-left: 78px;
-//     }
-//     .footer__newsletter-form {
-//         display: flex;
-//     }
-//     .footer__newsletter-btn {
-//         margin-top: 0px;
-//     }
-//     .footer__socials {
-//         margin-top: 60px;
-//         margin-left: 70px;
-//     }
-//     .footer__description {
-//         text-align: left;
-//     }
+    .footer-flex {
+        align-items: baseline;
+    }
+
+    .footer__address-item {
+        text-align: left;
+    }
+    .footer__description {
+        text-align: left;
+    }
+    .footer__newsletter-form {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .footer__newsletter-email {
+        width: 350px;
+    }
+    .footer-flex {
+        flex-wrap: nowrap;
+    }
+
 }
+

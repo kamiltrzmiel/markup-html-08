@@ -18,11 +18,12 @@
 @media screen and (min-width: $breakpointTablet) {
     .logo {
         display: flex;
+        justify-content: center;
     }
 }
 
 @media screen and (min-width: $breakpointDesktop) {
     .logo {
-        // display: flex;        
+        justify-content: left;
     }
 }

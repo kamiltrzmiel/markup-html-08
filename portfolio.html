@@ -326,9 +326,9 @@
     </main>
     <!-----FOOTER----->
     <footer class="footer">
-      <div class="footer__content container">
+      <div class="container footer-flex">
         <div class="footer__address">
-          <!---------------- LOGO START ----------------------->
+          <!---------------- LOGO BEGIN ----------------------->
           <a class="logo" href="index.html" title="Strona główna"
             >Web<span class="logo logo--footer">Studio</span></a
           >
@@ -385,7 +385,7 @@
         <div class="footer__newsletter">
           <span class="footer__description">Zapisz się do newslettera</span>
           <form name="footer-news-form" class="footer__newsletter-form">
-            <label>
+            <label for="footer-news-email">
               <input
                 type="email"
                 name="footer-news-email"
@@ -403,6 +403,51 @@
         </div>
       </div>
     </footer>
+    <!--------------------MOBILE MENU ---------------------------------->
+    <div class="mobile-menu js-menu-container">
+      <button class="mobile-toggle js-close-menu">
+        <svg class="mobile-menu-icon" width="20" height="20">
+          <use href="./images/icons.svg#icon-modal-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-container">
+        <ul class="mobile-container__navi">
+          <li>
+            <a class="mobile-container__navtext" href="./index.html">Agencja</a>
+          </li>
+          <li>
+            <a class="mobile-container__navtext" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a class="mobile-container__navtext" href="#">Kontakt</a>
+          </li>
+          <li class="mobile-container__listPhone">
+            <a href="tel:48111111111" class="mobile-container__phone"
+              ><span>+48 111 111 111</span></a
+            >
+          </li>
+          <li class="mobile-container__listEmail">
+            <a href="mailto:info@devstudio.com" class="mobile-container__email"
+              ><span>info@devstudio.com</span></a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-container__social">
+          <li class="mobile-container__listSocial">
+            <a class="mobile-container__linkSocial" href="#">Instagram</a>
+          </li>
+          <li class="mobile-container__listSocial">
+            <a class="mobile-container__linkSocial" href="#">Twitter</a>
+          </li>
+          <li class="mobile-container__listSocial">
+            <a class="mobile-container__linkSocial" href="#">Facebook</a>
+          </li>
+          <li class="mobile-container__listSocial">
+            <a class="mobile-container__linkSocial" href="#">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

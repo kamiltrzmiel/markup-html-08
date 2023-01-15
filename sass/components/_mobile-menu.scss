@@ -23,10 +23,73 @@
     background: none;
     border: none;
     cursor: pointer;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5 rem;
 }
 
-.mobile-button {
+.mobile-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
 
+    &__navi {
+        flex-direction: column;
+        gap: 2rem;
+        list-style: none;
+        }
+ 
+    &__navtext {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 4rem;
+        letter-spacing: 0.05rem;
+        text-decoration: none;
+        color: $pageColorBlack;
+        cursor: pointer;
+    }
+
+    &__listPhone {
+        padding-top: 1.4rem;
+    }
+    &__listEmail {
+        padding-top: 0.6rem;
+    }
+
+    &__phone {
+        font-size: 2.125rem;
+        text-decoration: none;
+        color: $pageColorBlue;
+    }
+
+    &__email {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: $pageColorGrey;
+    }
+    &__social {
+        display: inline-flex;
+        color: black;
+        list-style: none;
+        column-gap: 0.625rem;      
+    }
+    &__listSocial {
+        padding-right: 0.6rem;
+        border-right: 1px solid rgba(33,33,33,0.2);   
+    }
+    &__listSocial:last-child {
+        border-right: none;
+    }
+    &__linkSocial {
+       text-decoration: none; 
+       color: $pageColorBlue;
+       font-size: 1.125rem;
+       line-height: 1.25rem;
+       letter-spacing: 0.05rem;
+
+    }
+    
 }
 
 @media screen and (min-width: $breakpointTablet) {

@@ -2,7 +2,7 @@
     padding: 200px 0px 280px 0px;
     background-color: $pageColorBack;
     background-image: linear-gradient(rgba(47, 47, 57, 0.4), rgba(47, 47, 57, 0.4)),
-      url(../images/img_motto.jpg);
+      url(../images/img_motto_x2.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@
     }
 
     &__text {
-        font-size: 44px;
+        font-size: 1.625rem;
         font-weight: 900;
         line-height: 136%;
         letter-spacing: 0.06;
@@ -48,5 +48,22 @@
     &__btn:focus,
     &__btn:active {
     color: $pageColorWhite;
+    }
+}
+
+@media screen and (min-width: $breakpointTablet) {
+    .motto {
+        background-image: linear-gradient(rgba(47, 47, 57, 0.4), rgba(47, 47, 57, 0.4)),
+            url(../images/img_motto_768.jpg);
+    }
+}
+
+@media screen and (min-width: $breakpointDesktop) {
+    .motto {
+        background-image: linear-gradient(rgba(47, 47, 57, 0.4), rgba(47, 47, 57, 0.4)),
+            url(../images/img_motto.jpg);
+        &__text {
+            font-size: 2.75rem;
+        }
     }
 }

@@ -95,7 +95,6 @@
         flex-wrap: nowrap;
         align-items: center;
         padding-left: 83px;
-      
     }
     .header__contact {
       display: flex;
@@ -109,14 +108,11 @@
       gap: 0.625rem;
     }
     .header__container {
-      margin-left: 15px;
+       padding-bottom: 16px;
     }
   }
 @media screen and (min-width: $breakpointDesktop) {
-    .header__contact {
-      // margin-right: 215px;      
-    }
     .header__container {
-      // margin-left: 215px;
+      padding-bottom: 24px;
     }  
 }

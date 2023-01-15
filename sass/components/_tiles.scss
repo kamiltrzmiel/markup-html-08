@@ -86,3 +86,17 @@
         margin-bottom: 20px;
     }
 }
+
+@media screen and (min-width: $breakpointTablet) {
+    .tiles__pic {
+      width: 350px;
+    }
+    
+}
+
+@media screen and (min-width: $breakpointDesktop) {
+    .tiles__pic {
+        width: 370px;
+      }
+
+}
